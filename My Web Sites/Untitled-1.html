@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="navbar">
+          
+          
+          <!--<button class="dropdown-btn">Menu ▼</button>-->
+            <!--<div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>-->
+           <div class="MainMenu">
+
+            
+              <button class="toggle-menu"><span class="icon"><i class='bx bx-menu'></i></span>  <span class="icon-name">Menu</span></button>
+              
+            
+
+                <a href="#">
+                  <span class="icon"><i class='bx bxs-home'></i></span>     <span class="icon-name">Home</span>
+                </a>    
+                        
+                <a href="#">
+                  <span class="icon"><i class='bx bx-world' ></i></span>    <span class="icon-name">Countries</span>
+                </a>
+                        
+                <a href="#">
+                  <span class="icon"><i class='bx bx-info-circle' ></i></span>    <span class="icon-name">About</span>
+                </a>
+                        
+                <a href="#">
+                  <span class="icon"><i class='bx bxs-contact' ></i></span>    <span class="icon-name">Contact</span>
+                </a>
+                    
+                <a href="#">
+                  <span class="icon"><i class='bx bxs-cog' ></i></span>    <span class="icon-name">Settings</span>
+                </a>
+
+                <a href="#">
+                  <span class="icon"><i class='bx bx-log-out'></i></span>    <Span class="icon-name">Logout</Span>
+                </a>
+
+            </div>
+      </div> 
+      <!--<div class="main-content">
+        Main content here
+      </div>-->
+      <Section class="Main-Section">
+        <div class="Main-Content">
+          
+        </div>
+      </Section>
+    </div>  
+      <!--<script src="script.js"></script>-->
+      <script>
+        let navbar=document.querySelector(".navbar");
+        let togglemenu=document.querySelector(".toggle-menu");
+        let Main=document.querySelector(".Main-Section");
+        console.log(togglemenu);
+        togglemenu.addEventListener("click", ()=>{
+          navbar.classList.toggle("close");
+        });
+      </script>
+</body>
+</html>
